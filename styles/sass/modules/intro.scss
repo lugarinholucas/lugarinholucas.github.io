@@ -1,0 +1,51 @@
+.intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $color-black;
+    text-align: center;
+    &-logo {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 40px;
+        left: 40px;
+        background: url('../img/logo.svg') no-repeat center;
+        background-size: 100%;
+        z-index: 100;
+    }
+    &-title {
+        width: 95%;
+        margin: 16% auto 0;
+        font-family: $font-family-title;
+        font-size: 80px;
+        color: $color-white;
+        text-transform: uppercase;
+        @media only screen and (max-width: $break-small) {
+            width: 90%;
+            margin: 40% auto 0;
+            font-size: 27px;
+        }
+        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { 
+            margin: 40% auto 0;
+            font-size: 50px;
+        }
+    }
+    p {
+        font-family: $font-family-base;
+        font-size: 60px;
+        color: $color-white;
+    }
+}
+
+.next-project {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 0 60px;
+    font-family: $font-family-base;
+    text-decoration: none;
+    font-size: 20px;
+    color: $color-white;
+}

@@ -1,0 +1,31 @@
+.yalochat {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-blue-base;
+    text-align: center;
+    position: relative;
+    &-copy {
+        width: 60%;
+        display: block;
+        margin: 16% auto 0;
+        font-family: $font-family-base;
+        font-size: 80px;
+        color: $color-white;
+        a {
+            color: $color-white;
+        }
+        span {
+            font-size: 20px;
+        }
+        @media only screen and (max-width: $break-small) {
+            width: 80%; 
+            margin: 70% auto 0;
+            font-size: 40px;
+        }
+        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+            width: 80%; 
+            margin: 40% auto 0;
+            font-size: 50px;
+        }
+    }
+}
